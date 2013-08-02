@@ -1,0 +1,14 @@
+--- GeoIP.SlackBuild	2011-09-04 20:34:15.000000000 -0500
++++ GeoIP.SlackBuild.new	2013-08-02 16:33:32.000000000 -0500
+@@ -26,8 +26,10 @@
+ 
+ # revision date 2011/08/31
+ 
++# Updated by Donald Cooley <dfc@warpmail.net>
++
+ PRGNAM=GeoIP
+-VERSION=${VERSION:-1.4.8}
++VERSION=${VERSION:-1.5.1}
+ BUILD=${BUILD:-1}
+ TAG=${TAG:-_SBo}
+ 
