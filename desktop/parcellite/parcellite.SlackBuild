@@ -2,9 +2,10 @@
 
 # Slackware build script for parcellite
 # Written by Phillip Warner <pc_warner@yahoo.com>
+# Updated by Donald Cooley <dfc@warpmail.net>
 
 PRGNAM=parcellite
-VERSION=${VERSION:-1.0.2rc5}
+VERSION=${VERSION:-1.1.6}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -55,9 +56,6 @@ if [ "$NOICON" = "YES" ]; then
   sed -i "s/PARCELLITE_ICON/GTK_STOCK_PASTE/" src/main.c
   sed -i "s/#define GTK_STOCK_PASTE \"parcellite\"//" src/main.c
 fi
-# Starting with glib 2.32 it is now mandatory to 
-# include glib.h instead of individual headers.
-patch -p1 -i $CWD/glib-single-include.patch
 
 CFLAGS="$SLKCFLAGS" \
 CPPFLAGS="$SLKCFLAGS" \
